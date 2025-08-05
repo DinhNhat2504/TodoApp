@@ -7,7 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <table class="divide-y divide-gray-200">
+    <h1 class="text-center ">Xây dựng danh sách công việc của bạn</h1>
+    <div class="mt-10 flex h-15 justify-center">
+      <label class="pt-2">Nhập tên công việc: </label>
+      <input id="inputTodo" class="border ml-2 mr-2" type="text"> 
+      <button id="createTodo" class="rounded bg-green-500 p-2 ">Tạo mới</button>
+    </div >
+    <div class="flex justify-center mt-5"> <table id="todoList" class="divide-y divide-gray-200">
       <thead class="bg-gray-50">
         <tr>
           <th
@@ -20,6 +26,7 @@
           >
             Name
           </th>
+          
           <th
             class="px-4 py-3 text-left text-xs font-medium tracking-wider text-gray-500 uppercase"
           >
@@ -28,13 +35,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="px-4 py-3 text-sm whitespace-nowrap text-gray-600"></td>
-          <td class="px-4 py-3 text-sm whitespace-nowrap text-gray-600"></td>
-          <td class="px-4 py-3 text-sm whitespace-nowrap text-gray-600"></td>
-        </tr>
+        
       </tbody>
-    </table>
+    </table></div>
+   
     <script src="./create.todo.js"></script>
   </body>
 </html>
